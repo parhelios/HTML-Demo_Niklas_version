@@ -1,12 +1,19 @@
 body {
   font-size: 1em;
   background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   background-color: darkgray;
   color: darkslateblue;
   font-family: "Courier New", Courier, monospace;
+}
+.bild-adress{
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
 }
 
 h2 {
@@ -25,4 +32,9 @@ img {
 
 #adress {
   width: 200px;
+}
+
+#adress :hover{
+  background-color: rgba(255, 0, 0  , 0.5);
+  padding: .5em;
 }
