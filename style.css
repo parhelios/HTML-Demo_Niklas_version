@@ -1,54 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-size: 1em;
-  background-color: cadetblue;
-  display: flex;
-  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(95, 158, 160, .3);
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
+/* Style the header */
 .header {
-  background-color: darkgray;
-  color: darkslateblue;
-  font-family: "Courier New", Courier, monospace;
-}
-.bild-adress{
-  display: flex;  
+  background-color: cadetblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
 }
 
-.grid-container{
-  height: 400 px;
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgba(95, 158, 160, .5);
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-items: center;
-  align-items: center;
 }
 
-.ruta {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  border: solid 2px black;
-}
-
-h2 {
-  text-decoration: underline;
-}
-
-p {
-  color: wheat;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-}
-
-#adress {
-  width: 200px;
-}
-
-#adress :hover{
-  background-color: rgba(255, 0, 0  , 0.5);
-  padding: .5em;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
