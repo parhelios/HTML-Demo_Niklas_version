@@ -1,0 +1,28 @@
+body {
+  font-size: 1em;
+  background-color: cadetblue;
+}
+
+.header {
+  background-color: darkgray;
+  color: darkslateblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+p {
+  color: wheat;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#adress {
+  width: 200px;
+}
