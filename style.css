@@ -11,9 +11,23 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 .bild-adress{
-  background-color: rebeccapurple;
-  display: flex;
-  flex-direction: row;
+  display: flex;  
+}
+
+.grid-container{
+  height: 400 px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.ruta {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border: solid 2px black;
 }
 
 h2 {
